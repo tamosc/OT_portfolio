@@ -195,12 +195,13 @@ footer {
 @media (max-width: 768px) {
 
     main {
-        padding: 40px 20px;
+        padding: 35px 20px;
     }
 
     header {
         flex-direction: column;
-        gap: 20px;
+        gap: 15px;
+        padding: 20px;
     }
 
     .logo {
@@ -212,26 +213,56 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 15px;
+        gap: 10px;
     }
 
     nav a {
         margin: 0;
+        text-align: center;
+        font-size: 14px;
     }
 
     .introduction {
+        display: flex;
         flex-direction: column;
-        align-items: center;
-        gap: 40px;
+        align-items: stretch;
+        gap: 35px;
     }
 
     .introduction-text {
         width: 100%;
     }
 
+    .welcome-text {
+        font-size: 14px;
+    }
+
+    .introduction-text h1 {
+        font-size: 32px;
+    }
+
     .introduction-image {
-        width: 80%;
+        width: auto;
         max-width: 350px;
+        margin: 0 auto;
+        padding: 15px;
+    }
+
+    .tech {
+        margin-top: 40px;
+    }
+
+    .tech p {
+        letter-spacing: 4px;
+        line-height: 1.8;
+    }
+
+    .projects-button {
+        margin-top: 15px;
+    }
+
+    footer {
+        padding: 30px 20px;
     }
 
     .footer-content {
@@ -245,11 +276,24 @@ footer {
         justify-self: center;
     }
 
+    .footer-left {
+        justify-content: center;
+    }
+
+    .footer-center {
+        justify-content: center;
+    }
+
     .footer-right {
         align-items: center;
     }
 
     .footer-center img {
         width: 120px;
+    }
+
+    .contact-item {
+        justify-content: center;
+        font-size: 13px;
     }
 }
