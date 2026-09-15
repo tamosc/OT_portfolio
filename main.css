@@ -105,6 +105,36 @@ body {
     background-color: #2A3C24;
     color: white;
 }
+.education-item {
+    margin-bottom: 25px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.education h2{
+        border-left: 4px solid #899878;
+        padding-left: 10px;
+}
+.education-item img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+.education ul {
+    list-style: none;
+    padding-left: 0;
+}
+.education-item span {
+    font-weight: 500;
+}
+.education-item p {
+    font-size: 15px;
+    margin-top: 5px;
+}
 footer {
     padding: 25px 40px;
     background-color: #899878;
