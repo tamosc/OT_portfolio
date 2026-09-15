@@ -199,6 +199,10 @@ body {
 .sports {
     margin-top: 40px;
 }
+.about-me h2 {
+    border-left: 4px solid #899878;
+    padding-left: 10px;
+}
 
 .sports-item {
     display: flex;
@@ -224,7 +228,10 @@ body {
 .sports-item.reverse {
     flex-direction: row-reverse;
 }
-
+.visual-considerations h2 {
+    border-left: 4px solid #899878;
+    padding-left: 10px;
+}
 footer {
     padding: 25px 40px;
     background-color: #899878;
