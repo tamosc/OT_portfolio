@@ -135,6 +135,51 @@ body {
     font-size: 15px;
     margin-top: 5px;
 }
+.workexperience h2 {
+    border-left: 4px solid #899878;
+    padding-left: 10px;
+}
+.workexperience-item {
+    margin-bottom: 25px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.workexperience-item img {
+    width: 250px;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 20px;
+}
+.workexperience ul {
+    list-style: none;
+    padding-left: 0;
+}
+.workexperience-item span {
+    font-weight: 500;
+}
+.work-image {
+    width: 250px;
+    height: 150px;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+.work-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    }
+.workexperience-item p {
+    font-size: 15px;
+    margin-top: 5px;
+}
 footer {
     padding: 25px 40px;
     background-color: #899878;
