@@ -156,13 +156,6 @@ body {
     gap: 20px;
 }
 
-.workexperience-item img {
-    width: 250px;
-    height: 150px;
-    object-fit: contain;
-    border-radius: 20px;
-}
-
 .workexperience ul {
     list-style: none;
     padding-left: 0;
@@ -199,6 +192,7 @@ body {
 .sports {
     margin-top: 40px;
 }
+
 .about-me h2 {
     border-left: 4px solid #899878;
     padding-left: 10px;
@@ -228,10 +222,43 @@ body {
 .sports-item.reverse {
     flex-direction: row-reverse;
 }
+
+.visuals {
+    margin-top: 40px;
+}
+
 .visual-considerations h2 {
     border-left: 4px solid #899878;
     padding-left: 10px;
 }
+
+.visuals-item {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 25px;
+}
+
+.visuals-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.visual-image {
+    width: 350px;
+    height: 230px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.visual-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 20px;
+}
+
 footer {
     padding: 25px 40px;
     background-color: #899878;
@@ -459,6 +486,19 @@ footer {
     }
 
     .sports-item img {
+        width: 100%;
+        height: 220px;
+    }
+
+
+    .visuals-item.reverse {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        margin-bottom: 35px;
+    }
+
+    .visual-image {
         width: 100%;
         height: 220px;
     }
