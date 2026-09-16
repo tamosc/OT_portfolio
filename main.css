@@ -490,7 +490,7 @@ footer {
         height: 220px;
     }
 
-
+.visuals-item,
     .visuals-item.reverse {
         flex-direction: column;
         align-items: flex-start;
