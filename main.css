@@ -258,6 +258,10 @@ body {
     object-fit: contain;
     border-radius: 20px;
 }
+.projects h2 {
+    border-left: 4px solid #899878;
+    padding-left: 10px;
+}
 
 footer {
     padding: 25px 40px;
