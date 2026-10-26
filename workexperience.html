@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
 </head>
 
 <body>
@@ -22,7 +23,11 @@
         <img class="logo" src="images/logo_ot.png" alt="Oscar Tamborg logo">
     </a>
 
-    <nav>
+    <button id="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation">
+        ☰ Menu
+    </button>
+
+    <nav id="navigation">
         <a href="education.html">Education</a>
         <a href="workexperience.html">Work Experience</a>
         <a href="aboutme.html">About Me</a>
