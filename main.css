@@ -19,6 +19,10 @@ header {
     object-fit: contain;
 }
 
+#menu-toggle {
+    display: none;
+}
+
 nav a {
     color: black;
     text-decoration: none;
@@ -258,6 +262,7 @@ body {
     object-fit: contain;
     border-radius: 20px;
 }
+
 .projects h2 {
     border-left: 4px solid #899878;
     padding-left: 10px;
@@ -351,12 +356,8 @@ footer {
     text-decoration: underline;
 }
 
-@media (max-width: 768px) {
-
-    main {
-        padding: 35px 20px;
-    }
-
+/* Menu på mindre skærme */
+@media (max-width: 1000px) {
     header {
         flex-direction: column;
         gap: 15px;
@@ -368,11 +369,27 @@ footer {
         height: auto;
     }
 
-    nav {
-        display: flex;
+    #menu-toggle {
+        display: block;
+        background-color: transparent;
+        color: black;
+        border: 1px solid black;
+        border-radius: 8px;
+        padding: 10px 16px;
+        font: inherit;
+        cursor: pointer;
+    }
+
+    #navigation {
+        display: none;
+        width: 100%;
         flex-direction: column;
         align-items: center;
-        gap: 10px;
+        gap: 15px;
+    }
+
+    #navigation.open {
+        display: flex;
     }
 
     nav a {
@@ -380,9 +397,15 @@ footer {
         text-align: center;
         font-size: 14px;
     }
+}
+
+/* Sidens indhold på mobil */
+@media (max-width: 768px) {
+    main {
+        padding: 35px 20px;
+    }
 
     .introduction {
-        display: flex;
         flex-direction: column;
         align-items: stretch;
         gap: 35px;
@@ -494,7 +517,7 @@ footer {
         height: 220px;
     }
 
-.visuals-item,
+    .visuals-item,
     .visuals-item.reverse {
         flex-direction: column;
         align-items: flex-start;
@@ -506,10 +529,7 @@ footer {
         width: 100%;
         height: 220px;
     }
-    .projects h2 {
-        border-left: 4px solid #899878;
-        padding-left: 10px;
-    }
+
     footer {
         padding: 30px 20px;
     }
@@ -525,10 +545,7 @@ footer {
         justify-self: center;
     }
 
-    .footer-left {
-        justify-content: center;
-    }
-
+    .footer-left,
     .footer-center {
         justify-content: center;
     }
