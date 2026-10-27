@@ -4,6 +4,14 @@ main {
     padding: 30px 10px;
 }
 
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #FFEDE1;
+    margin: 0;
+}
+
+/* Header og navigation */
+
 header {
     background-color: #899878;
     color: black;
@@ -23,21 +31,23 @@ header {
     display: none;
 }
 
+#navigation {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px 25px;
+}
+
 nav a {
     color: black;
     text-decoration: none;
-    margin: 0 20px;
 }
 
 nav a:hover {
     text-decoration: underline;
 }
 
-body {
-    font-family: "Montserrat", sans-serif;
-    background-color: #FFEDE1;
-    margin: 0;
-}
+/* Forside */
 
 .welcome-text {
     border-left: 4px solid #899878;
@@ -74,7 +84,7 @@ body {
     text-align: center;
     font-size: 10px;
     letter-spacing: 4px;
-    margin: 12px 0 0 0;
+    margin: 12px 0 0;
 }
 
 .tech {
@@ -111,6 +121,8 @@ body {
     color: white;
 }
 
+/* Education */
+
 .education h2 {
     border-left: 4px solid #899878;
     padding-left: 10px;
@@ -146,6 +158,8 @@ body {
     font-size: 15px;
     margin-top: 5px;
 }
+
+/* Work Experience */
 
 .workexperience h2 {
     border-left: 4px solid #899878;
@@ -193,13 +207,15 @@ body {
     margin-top: 5px;
 }
 
-.sports {
-    margin-top: 40px;
-}
+/* About Me */
 
 .about-me h2 {
     border-left: 4px solid #899878;
     padding-left: 10px;
+}
+
+.sports {
+    margin-top: 40px;
 }
 
 .sports-item {
@@ -226,6 +242,8 @@ body {
 .sports-item.reverse {
     flex-direction: row-reverse;
 }
+
+/* Visual Considerations */
 
 .visuals {
     margin-top: 40px;
@@ -263,10 +281,14 @@ body {
     border-radius: 20px;
 }
 
+/* Projects */
+
 .projects h2 {
     border-left: 4px solid #899878;
     padding-left: 10px;
 }
+
+/* Footer */
 
 footer {
     padding: 25px 40px;
@@ -356,7 +378,8 @@ footer {
     text-decoration: underline;
 }
 
-/* Menu på mindre skærme */
+/* Menu på mobil og tablet */
+
 @media (max-width: 1000px) {
     header {
         flex-direction: column;
@@ -392,14 +415,18 @@ footer {
         display: flex;
     }
 
-    nav a {
+    #navigation a {
+        display: block;
+        color: black;
         margin: 0;
+        padding: 8px 0;
         text-align: center;
         font-size: 14px;
     }
 }
 
 /* Sidens indhold på mobil */
+
 @media (max-width: 768px) {
     main {
         padding: 35px 20px;
